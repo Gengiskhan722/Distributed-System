@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="background: linear-gradient(to right, #bdc3c7, #2c3e50);">
+		
+		<table>
+			<!-- Encabezados de la tabla -->
+			<tr>
+				<th><img src="./Logo.png" alt="Mi Imagen" idth="200" height="150"></th>
+				<th> <H1 style="font-family: 'Comic Sans MS', cursive;"> Upload Image</H1> </th>
+			</tr>
+		</table>
+	
+		<form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+			<label style="font-family: 'Courier New', Courier, monospace;">Select and option to modify your image:</label>
+			<select name=opcion>
+				<option value="blur" selected>blur</option>
+				<option value="resize">resize</option>
+			</select>
+			<label style="font-family: 'Courier New', Courier, monospace:">Select and image to upload:</label>
+			<input type="file" name="file" id="file">
+			<input type="submit" value="Upload Image" name="submit">
+		</form>
+</body>
+</html>
+			

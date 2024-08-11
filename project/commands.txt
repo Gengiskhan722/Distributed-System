@@ -1,0 +1,4 @@
+systemctl start rabbitmq-server 
+sudo systemctl status rabbitmq-server
+sudo rabbitmq-diagnostics ping 
+celery -A addTask worker --pool=solo --loglevel=info
